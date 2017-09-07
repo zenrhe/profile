@@ -22,12 +22,10 @@
 <div id="app">
   <main class="main">
 
-<section class="sidebar">
-    @yield('sidebar');
-</section>
-    <section class="content">
-      @yield('content');
-    </section>
+   @yield('sidebar');
+
+   @yield('content');
+
   </main>
 
   @include('layouts.footer');

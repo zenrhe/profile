@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
 <!--Main Profile Page with various components-->
-  <div class="content__inner content__inner--sm">
+<section class="content">
+    <div class="content__inner content__inner--sm">
       <header class="content__title">
           <h1>{{ $users->cosplay_name }}</h1>
           <small>{{ $users->name }} {{ $users->surname }} - {{ $users->tagline }}</small>
@@ -31,6 +32,7 @@
       @include('events.attended');
 
     </div>
+</section>
 </section>
 @endsection
 

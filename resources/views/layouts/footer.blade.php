@@ -1,4 +1,4 @@
-<footer class="footer hidden-xs-down" style="border:2px solid yellow;">
+<footer class="footer hidden-xs-down">
       <p>© Material Admin Responsive. All rights reserved.</p>
 
       <ul class="nav footer__nav">
