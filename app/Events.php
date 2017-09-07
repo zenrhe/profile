@@ -6,10 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Events extends Model
 {
-  //How many days
+  //How many days long the event is
 
 
-  //free
+  //Is it a free, no ticket price
 
-  //Number of events attended
+  //Number of events attended for user
+
+  //Events Attended in Past by user 
+
+  //Events Attending by user
+
+  //List Attendees of event
+
+
+
 }

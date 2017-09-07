@@ -18,6 +18,7 @@ class CreateEventsTable extends Migration
             $table->text('title');
             $table->text('Descripton');
             $table->text('city');
+            $table->text('venue');
             $table->text('address');
             $table->text('eventFBLink');
             $table->text('organiserFBLink');
