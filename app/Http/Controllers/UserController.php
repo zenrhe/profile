@@ -37,7 +37,7 @@ class UserController extends Controller
     {
       $users = User::find('1');
       $events = Events::all();
-      return view('index', compact('users', 'events'));
+      return view('profileMain', compact('users', 'events'));
     }
 
 

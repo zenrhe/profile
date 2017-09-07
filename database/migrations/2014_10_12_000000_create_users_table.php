@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->text('mini_bio');
             $table->text('about');
             $table->string('cosplay_name');
+            $table->string('cosplay_since');
             $table->string('twitter');
             $table->string('fb_personal');
             $table->string('fb_cosplay');
