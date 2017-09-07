@@ -22,8 +22,9 @@
 <div id="app">
   <main class="main">
 
-    @include('layouts.profileSideBar');
-
+<section class="sidebar">
+    @yield('sidebar');
+</section>
     <section class="content">
       @yield('content');
     </section>

@@ -33,3 +33,7 @@
     </div>
 </section>
 @endsection
+
+@section('sidebar')
+  @include('layouts.profileSideBar');
+@endsection
