@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 <!--Main Profile Page with various components-->
+
+use Datetime;
 <section class="content">
     <div class="content__inner content__inner--sm">
       <header class="content__title">
@@ -17,8 +19,31 @@
           </div>
           <div class="profile__info">
               <h3>Mini Bio</h3>
+              <p>Age:
+                <?php
+                $dob_date = date_create($users->dob);
+                $todays_date = new \DateTime();
+                $todays_date->createFromFormat('d/m/Y', '10/06/2015');
+                $interval2 = $dob_date->diff($todays_date);
+                echo $interval2->format('%y years');
+                ?>
+              </p>
+              <p>Cosplaying Since: {{ date('M d, Y', strtotime($users->cosplay_since)) }}
+              <?php
+
+                $cosplay_date = date_create($users->cosplay_since);
+                $todays_date = new \DateTime();
+                $todays_date->createFromFormat('d/m/Y', '10/06/2015');
+                echo "( ";
+                $interval2 = $cosplay_date->diff($todays_date);
+                echo $interval2->format('%y years %m months');
+                echo " ) ";
+              ?>
+            </p>
               <p>{{ $users->mini_bio }}</p>
-              @include('profile.socialMediaList');
+              @include('profile.socialMediaList')
+
+
           </div>
       </div>
 

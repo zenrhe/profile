@@ -1,7 +1,7 @@
 <!-- Events Attended-->
       <div class="card-block">
           <div class="table-responsive">
-            <h4 class="card-block__title mb-4">Upcoming Events</h4>
+            <h4 class="card-block__title mb-4">Past Events</h4>
               <table id="data-table" class="table table-bordered .table-striped" >
                   <thead class="thead-default">
                       <tr>

@@ -9,6 +9,7 @@
                           <th>Location</th>
                           <th>Venue</th>
                           <th>Dates</th>
+                          <th>Days Away</th>
                       </tr>
                   </thead>
                   <tfoot>
@@ -17,6 +18,7 @@
                         <th>Location</th>
                         <th>Venue</th>
                         <th>Dates</th>
+                        <th>Days Away</th>
                       </tr>
                   </tfoot>
                   <tbody>
@@ -29,6 +31,16 @@
                               <td>
                               {{ date('M d', strtotime($event->startDate)) }} -
                               {{ date('M d, y', strtotime($event->endDate)) }}
+                            </td>
+                            <td>
+                              <?php
+                              $event_date = date_create($event->startDate);
+                              $todays_date = new \DateTime();
+                              $todays_date->createFromFormat('d/m/Y', '10/06/2015');
+                              $interval2 = $event_date->diff($todays_date);
+                              $interval2 = $todays_date->diff($event_date);
+                              echo $interval2->format('%y years %m months');
+                              ?>
                             </td>
 
 

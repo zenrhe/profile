@@ -6,5 +6,4 @@
       <li><i class="zmdi zmdi-facebook"></i> Cosplay: {{ $users->fb_cosplay}}</li>
       <li><i class="zmdi zmdi-facebook"></i> Photograper:  {{ $users->fb_photgrapher}}</li>
       <li><i class="zmdi zmdi-facebook"></i> Shop: {{ $users->fb_seller}}</li>
-
 </ul>

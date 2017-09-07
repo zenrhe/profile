@@ -39,6 +39,4 @@ class UserController extends Controller
       $events = Events::all();
       return view('profileMain', compact('users', 'events'));
     }
-
-
 }
